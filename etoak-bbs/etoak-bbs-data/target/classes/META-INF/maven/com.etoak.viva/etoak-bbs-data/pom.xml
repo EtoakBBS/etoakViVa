@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.etoak.viva</groupId>
+		<artifactId>etoak-bbs</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+
+	<artifactId>etoak-bbs-data</artifactId>
+	<name>etoak-bbs-data</name>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>com.etoak.viva</groupId>
+			<artifactId>etoak-bbs-po</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.etoak.viva</groupId>
+			<artifactId>etoak-common</artifactId>
+		</dependency>
+
+		<!-- mybatis 基础包 -->
+		<dependency>
+			<groupId>org.mybatis</groupId>
+			<artifactId>mybatis</artifactId>
+		</dependency>
+	</dependencies>
+
+</project>

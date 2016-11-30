@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Vendor: Pivotal Software, Inc.
+Implementation-Title: etoak-bbs-vo
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.etoak.viva
+Build-Jdk: 1.7.0_15
+Built-By: Lin
+Created-By: Maven Integration for Eclipse
+Implementation-URL: http://maven.apache.org/etoak-bbs/etoak-bbs-vo
+

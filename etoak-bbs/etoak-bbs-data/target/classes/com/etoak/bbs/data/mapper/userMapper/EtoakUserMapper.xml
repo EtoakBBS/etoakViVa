@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.etoak.bbs.data.dao.EtoakUserDao">
+
+	<resultMap type="com.etoak.bbs.po.user.EtoakUserPo" id="etoakUserMap">
+		<result property="username" column="USERNAME" />
+		<result property="password" column="PASSWORD" />
+		<result property="age" column="AGE" />
+		<result property="etoakNo" column="ETOAKNO" />
+		<result property="gender" column="GENDER" />
+		<result property="phone" column="PHONE" />
+	</resultMap>
+
+
+	<!-- =========================================================== -->
+	<!-- 一些公共变量设置 -->
+	<!-- =========================================================== -->
+	<!-- mysql 分页 -->
+	<sql id="pagination_tail">
+		limit #{page.pageOffset} , #{page.rows}
+	</sql>
+	<!-- mysql 查询总数 -->
+	<sql id="count_Tail">
+		select count(1) from
+	</sql>
+
+
+	<sql id="selectAllColumns">
+		<![CDATA[
+		SELECT
+			USERNAME,
+			PASSWORD,
+			AGE,
+			PHONE,
+			ETOAKNO,
+			GENDER
+		FROM 
+			ET_USER
+		]]>
+	</sql>
+	
+	<select id="queryById" resultMap="etoakUserMap" parameterType="int">
+		<include refid="selectAllColumns" />
+		WHERE ID = #{id}
+	</select>
+
+</mapper>
