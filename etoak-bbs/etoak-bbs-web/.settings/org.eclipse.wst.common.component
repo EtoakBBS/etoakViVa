@@ -11,6 +11,12 @@
         <dependent-module archiveName="etoak-bbs-service-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/etoak-bbs-service/etoak-bbs-service">
             <dependency-type>uses</dependency-type>
         </dependent-module>
+        <dependent-module archiveName="etoak-bbs-data-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/etoak-bbs-data/etoak-bbs-data">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="etoak-bbs-po-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/etoak-bbs-po/etoak-bbs-po">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <dependent-module archiveName="etoak-common-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/etoak-common/etoak-common">
             <dependency-type>uses</dependency-type>
         </dependent-module>
